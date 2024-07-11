@@ -1,0 +1,84 @@
+/* Reset default padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Apply perspective to create a 3D space */
+body {
+    perspective: 600px;
+}
+
+/* Style for the card container */
+section {
+    transform-style: preserve-3d;
+    /* Maintain 3D transformations */
+    transition: 1s;
+    /* Smooth transition duration */
+    -webkit-transition: 1s;
+    /* Vendor prefix for webkit browsers */
+    -moz-transition: 1s;
+    /* Vendor prefix for Firefox */
+    -ms-transition: 1s;
+    /* Vendor prefix for Microsoft browsers */
+    -o-transition: 1s;
+    /* Vendor prefix for Opera */
+    margin: 200px auto;
+    /* Center horizontally with top margin */
+}
+
+/* Front and Back sides of the card */
+.Front,
+.Back {
+    position: absolute;
+    /* Position absolutely within section */
+}
+
+/* Set dimensions for Front, Back, and section */
+.Front,
+.Back,
+section {
+    width: 300px;
+    height: 300px;
+}
+
+/* Styling for the front side of the card */
+.Front {
+    background-color: red;
+    backface-visibility: hidden;
+    /* Hide backface of the element */
+    -webkit-backface-visibility: hidden;
+    /* Vendor prefix for webkit browsers */
+    z-index: 1;
+    /* Ensure Front appears above Back during flip */
+}
+
+/* Styling for the back side of the card */
+.Back {
+    background-color: green;
+    transform: rotatey(180deg);
+    /* Initially flipped to the back */
+    -webkit-transform: rotatey(180deg);
+    /* Vendor prefix for webkit browsers */
+    -moz-transform: rotatey(180deg);
+    /* Vendor prefix for Firefox */
+    -ms-transform: rotatey(180deg);
+    /* Vendor prefix for Microsoft browsers */
+    -o-transform: rotatey(180deg);
+    /* Vendor prefix for Opera */
+}
+
+/* Flip animation on hover */
+section:hover {
+    transform: rotatey(180deg);
+    /* Rotate to show the back side */
+    -webkit-transform: rotatey(180deg);
+    /* Vendor prefix for webkit browsers */
+    -moz-transform: rotatey(180deg);
+    /* Vendor prefix for Firefox */
+    -ms-transform: rotatey(180deg);
+    /* Vendor prefix for Microsoft browsers */
+    -o-transform: rotatey(180deg);
+    /* Vendor prefix for Opera */
+}
