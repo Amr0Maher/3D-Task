@@ -38,6 +38,3 @@ This project is licensed under the MIT License. For detailed information, please
 CSS: For its powerful styling capabilities and animation features.
 GitHub: For hosting and version control, making it easy to share and collaborate on this project.
 Thank you for checking out the 3D Card Flip Effect! We hope you enjoy the interactive experience. If you have any questions, feedback, or suggestions, feel free to reach out!
-
-
-هذا النص يعرض المشروع بطريقة مشوقة ويبرز الميزات التقنية والمرئية بشكل جذاب. إذا كان لديك أي تعديلات أو تفاصيل إضافية ترغب في إضافتها، لا تتردد في إخباري!
